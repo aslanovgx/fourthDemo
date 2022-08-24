@@ -1,0 +1,113 @@
+/* object-fit:
+fill - responsivity ucun lazim olur. Yeni ekrani ne qeder yigsaq, oz olcusunu saxlayacaq.
+contain - iconlarda istifade olunur.
+*/
+
+
+/*      CSS Variables: 
+The var() function is used to insert the value of a CSS variable.
+
+
+
+*/
+
+:root {
+    --main_color: black;
+    /* Hal-hazirda evvelki reng blue-du, root-dan istifade etmeyimizin esas meqsedi meselen
+    font-size deyismek isteyirikse, tek-tek deyismek evezine --size()-i black etmeliyik meselen */
+    --bg_color: rgb(110, 156, 110);
+    --size: 1.2rem;
+    --padding: 1rem;
+}
+
+h1 {
+    background-color: var(--bg_color);
+    color: var(--main_color);
+    font-size: var(--size);
+    padding: var(--padding);
+}
+
+p {
+    color: var(--main_color);
+    padding: var(--padding);
+}
+
+.code {
+    background-color: var(--bg_color); 
+    padding: var(--padding);
+}
+
+.code h3 {
+    color: var(--main_color);
+    font-size: var(--size);
+    padding: var(--padding);
+    letter-spacing: 2px;
+    /* sozler arasindaki mesafe */
+    line-height: 20px;
+}
+
+.code h3::first-letter {
+    font-size: 3rem;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 10px auto;
+    padding: 40px 0;
+
+}
+
+table {
+    width: 100%;
+}
+
+table th, td {
+    border: 1px solid black;
+}
+
+table tbody tr {
+    text-align: center;
+}
+
+table tbody tr:nth-child(odd) {
+    /* yeni demey isteyirikki, tr-nin child-lari. th ve td -ler */
+    color: blue;
+}
+
+table tbody tr:nth-child(even) {
+    color: red;
+}
+
+table tbody tr:nth-child(3n-2) {
+    background-color: bisque;
+}
+
+table tbody tr:nth-child(3n-1) {
+    background-color: rgb(99, 59, 10);
+}
+
+table tbody tr:nth-child(3n) {
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+ul li {
+    list-style: none;
+    /* default - disc */
+    /* ul nin padding- var default */
+    
+}
+
+
+
+
+
+
+
