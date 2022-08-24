@@ -1,0 +1,36 @@
+table  {
+    width: 70%;
+    height: 200px;
+}
+
+th, td {
+    border: 1px solid black;
+
+}
+
+table thead tr{
+    background-color: rgb(97, 160, 97);
+    color: white;
+}
+
+table thead th:nth-child(1) {
+    text-align: left;
+    
+}
+
+table tbody th {
+    text-align: right;
+}
+
+table td {
+    text-align: center;
+}
+
+table td:nth-child(1) {
+    text-align: left;
+}
+
+table th, td:nth-child(1){
+    padding-left: 9px;
+}
+
